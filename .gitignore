@@ -83,3 +83,6 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+#
+02Kotlin/.idea/gradle.xml
+02Kotlin/.idea/misc.xml
