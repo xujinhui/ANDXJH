@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/four_nav_gra"
+            app:startDestination="@id/fourIndexFragment">
+
+    <fragment android:id="@+id/fourIndexFragment" android:name="com.example.a02kotlin.FourIndexFragment"
+              android:label="fragment_four_index" tools:layout="@layout/fragment_four_index">
+        <action android:id="@+id/action_fourIndexFragment_to_fourDetailFragment"
+                app:destination="@id/fourDetailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/fourDetailFragment" android:name="com.example.a02kotlin.FourDetailFragment"
+              android:label="fragment_four_detail" tools:layout="@layout/fragment_four_detail">
+        <action android:id="@+id/action_fourDetailFragment_to_fourIndexFragment"
+                app:destination="@id/fourIndexFragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.a02kotlin">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="MainActivity_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+
+<!--        <activity-->
+<!--                android:name=".PPActivity"-->
+<!--                android:label="PP_test title">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.litreily.PPActivity"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+<!--        <activity android:name=".TwoActivity"  android:label="two_test title">-->
+
+<!--            <intent-filter>-->
+<!--                <action android:name="com.litreily.TwoActivity"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--            </intent-filter>-->
+
+<!--        </activity>-->
+
+
+<!--        <activity android:name=".ThreeActivity"  android:label="three_test title">-->
+
+<!--            <intent-filter>-->
+<!--                <action android:name="com.litreily.ThreeActivity"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--            </intent-filter>-->
+
+<!--        </activity>-->
+
+
+<!--        <activity android:name=".FourActivity"  android:label="Four_test title">-->
+
+<!--            <intent-filter>-->
+<!--                <action android:name="com.litreily.FourActivity"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--            </intent-filter>-->
+
+<!--        </activity>-->
+
+<!--        <activity android:name=".FiveActivity"  android:label="Five_test title">-->
+
+<!--            <intent-filter>-->
+<!--                <action android:name="com.litreily.FiveActivity"/>-->
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--            </intent-filter>-->
+
+<!--        </activity>-->
+
+
+        <activity android:name=".SixActivity"  android:label="666_test title">
+
+            <intent-filter>
+                <action android:name="com.litreily.SixActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/five_nav_gra"
+            app:startDestination="@id/fiveIndexFragment">
+
+    <fragment android:id="@+id/fiveIndexFragment" android:name="com.example.a02kotlin.FiveIndexFragment"
+              android:label="fragment_five_index" tools:layout="@layout/fragment_five_index">
+        <action android:id="@+id/action_fiveIndexFragment_to_fiveDetailFragment"
+                app:destination="@id/fiveDetailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/fiveDetailFragment" android:name="com.example.a02kotlin.FiveDetailFragment"
+              android:label="fragment_five_detail" tools:layout="@layout/fragment_five_detail">
+        <action android:id="@+id/action_fiveDetailFragment_to_fiveIndexFragment"
+                app:destination="@id/fiveIndexFragment" app:popUpTo="@id/fiveIndexFragment"
+                app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

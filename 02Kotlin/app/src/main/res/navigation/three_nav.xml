@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/three_nav"
+            app:startDestination="@id/threeIndexFragment">
+
+    <fragment android:id="@+id/threeIndexFragment" android:name="com.example.a02kotlin.ThreeIndexFragment"
+              android:label="index" tools:layout="@layout/fragment_three_index">
+        <action android:id="@+id/action_threeIndexFragment_to_threeDetailFragmentnt"
+                app:destination="@id/threeDetailFragmentnt" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment android:id="@+id/threeDetailFragmentnt" android:name="com.example.a02kotlin.ThreeDetailFragmentnt"
+              android:label="detail" tools:layout="@layout/fragment_three_detail_fragmentnt">
+        <action android:id="@+id/action_threeDetailFragmentnt_to_threeIndexFragment"
+                app:destination="@id/threeIndexFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+</navigation>

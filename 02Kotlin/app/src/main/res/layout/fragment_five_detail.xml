@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable name="mData" type="com.example.a02kotlin.FiveViewModel"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".FiveDetailFragment">
+        <Button
+                android:text="@string/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_five_back"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.499"/>
+        <TextView
+                android:text= "@{ String.valueOf(mData.number)}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_five_detail_lab"
+                app:layout_constraintBottom_toTopOf="@+id/button_five_back" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="132dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.542" android:backgroundTint="@color/colorPinkDeep"
+                android:background="#FF9800"/>
+        <Button
+                android:text="@string/plus_1"
+                android:onClick="@{ ()-> mData.add(1)}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_five_detail_plus"
+                app:layout_constraintBottom_toTopOf="@+id/button_five_back"
+                app:layout_constraintEnd_toEndOf="@+id/button_five_back"
+                app:layout_constraintStart_toStartOf="@+id/button_five_back"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

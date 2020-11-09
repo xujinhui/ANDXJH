@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_icon_w">100</dimen>
+    <dimen name="font_text_size_20">20sp</dimen>
+    <dimen name="Button_height_40">40dp</dimen>
+    <dimen name="width_180" />
+</resources>

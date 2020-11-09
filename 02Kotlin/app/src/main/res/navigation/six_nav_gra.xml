@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/six_nav_gra"
+    app:startDestination="@id/sixIndexFragment">
+
+    <fragment
+        android:id="@+id/sixIndexFragment"
+        android:name="com.example.a02kotlin.SixIndexFragment"
+        android:label="fragment_six_index"
+        tools:layout="@layout/fragment_six_index" >
+        <action
+            android:id="@+id/action_sixIndexFragment_to_sixDetailFragment"
+            app:destination="@id/sixDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixDetailFragment"
+        android:name="com.example.a02kotlin.SixDetailFragment"
+        android:label="fragment_six_detail"
+        tools:layout="@layout/fragment_six_detail" >
+        <action
+            android:id="@+id/action_sixDetailFragment_to_sixSuccessFragment"
+            app:destination="@id/sixSuccessFragment" />
+        <action
+            android:id="@+id/action_sixDetailFragment_to_sixFailFragment"
+            app:destination="@id/sixFailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixSuccessFragment"
+        android:name="com.example.a02kotlin.SixSuccessFragment"
+        android:label="fragment_six_success"
+        tools:layout="@layout/fragment_six_success" >
+        <action
+            android:id="@+id/action_sixSuccessFragment_to_sixIndexFragment"
+            app:destination="@id/sixIndexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixFailFragment"
+        android:name="com.example.a02kotlin.SixFailFragment"
+        android:label="fragment_six_fail"
+        tools:layout="@layout/fragment_six_fail" >
+        <action
+            android:id="@+id/action_sixFailFragment_to_sixIndexFragment"
+            app:destination="@id/sixIndexFragment" />
+    </fragment>
+</navigation>
